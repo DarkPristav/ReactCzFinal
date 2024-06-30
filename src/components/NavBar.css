@@ -1,0 +1,23 @@
+.activeLink {
+    color: var(--color-primary-variant);
+}
+
+.nonactiveLink {
+    color: var(--color-primary);
+}
+
+.header__nav {
+    height: 100px;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+nav a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 5px 10px;
+    font-size: 20px;
+}

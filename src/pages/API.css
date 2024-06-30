@@ -1,0 +1,48 @@
+.api {
+    display: flex;
+    justify-content: center;
+       gap: 10rem;
+        overflow: hidden;
+        margin-top: 10rem;
+        margin-bottom: 7.5rem;
+}
+
+.input__area {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 200px;
+}
+
+.input__area button {
+        color: var(--color-white);
+        background-color: var(--color-light);
+        border-radius: 5px;
+        padding: 5px 10px;
+        cursor: pointer;
+        border: none;
+        margin-left: 5px;
+        margin-right: 5px;
+}
+
+.input__area input {
+    padding: 3px 10px;
+    outline: none;
+    margin-bottom: 1rem;
+}
+
+.input__title {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-size: 20px;
+    color: var(--color-primary);
+}
+
+.api__output {
+    background-color: var(--color-light);
+    width: 200px;
+    height: 200px;
+    padding: 20px;
+    border: 5px solid var(--color-primary);
+    border-radius: 5px;
+}
