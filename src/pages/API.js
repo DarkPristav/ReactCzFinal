@@ -1,19 +1,15 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import './API.css';
 
 const API = () => {
   const [firstName, setFirstName] = useState('');
-  const [qr, setQr] = useState(null);
+  const [qr, setQr] = useState('https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=Petyusya');
 
   const formSubmit = (event) => {
     event.preventDefault();
     setQr(`https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=${firstName}`);
     setFirstName('');
   };
-
-  useEffect(() => {
-    setQr();
-  }, []);
 
   return (
     <div className="api">
@@ -30,7 +26,7 @@ const API = () => {
         </form>
       </div>
       <div className="api__output">
-        <img className="qr__img" src={qr} alt="qr" />
+        <img className="qr__img" src={qr} alt="" />
       </div>
     </div>
   );

@@ -1,13 +1,14 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom"
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 import GeneralLayout from './pages/GeneralLayout';
 import Home from './pages/Home';
 import About from './pages/About';
 import API from './pages/API';
-import Error from './pages/Error'
+import Error from './pages/Error';
 
 const App = () => {
-  return <BrowserRouter>
+  return (
+    <BrowserRouter>
       <Routes>
         <Route element={<GeneralLayout />}>
           <Route path="/" element={<Home />} />
@@ -17,6 +18,7 @@ const App = () => {
         </Route>
       </Routes>
     </BrowserRouter>
-}
+  );
+};
 
-export default App
+export default App;

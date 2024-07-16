@@ -13,10 +13,10 @@ const Header = () => {
           <img src={Me} alt="Me" />
         </div>
         <h5>Hello I am</h5>
-        <h1 className="header__title" style={{ color: `${randomColorTitle}` }}>
+        <h1 className="header__title" style={{ color: randomColorTitle }}>
           Petro Atamaniuk
         </h1>
-        <h5 className="header__light" style={{ color: `${randomColor}` }}>
+        <h5 className="header__light" style={{ color: randomColor }}>
           FrontEnd Developer
         </h5>
       </div>
